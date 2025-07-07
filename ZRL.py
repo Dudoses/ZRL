@@ -39,12 +39,6 @@ class GameMap:
             print("".join(row))
 
 
-    def Get_button():
-    if msvcrt.kbhit():
-        return msvcrt.getch()
-    return button
-
-
 player = Player(1, 8)
 print(player.describe())
 game_map = GameMap(20, 10)
