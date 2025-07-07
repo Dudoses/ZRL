@@ -1,6 +1,6 @@
 import msvcrt
 import time
-#commit check
+
 
 class GameObject:
     def __init__(self, pos_x, pos_y, symbol):
@@ -33,7 +33,6 @@ class GameMap:
         for y in range(self.height):
             self.map[y][0] = "#"
             self.map[y][self.width - 1] = "#"
-
     def show (self):
         for row in self.map:
             print("".join(row))
